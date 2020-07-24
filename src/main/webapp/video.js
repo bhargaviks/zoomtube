@@ -43,3 +43,11 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
   event.target.playVideo();
 }
+
+var intervalId = window.setInterval(doSomething, 1000);
+function doSomething() {
+  const currentTime = videoPlayer.getCurrentTime();
+  if(currentTime > 10) {
+    videoPlayer.seekTo(0, true);
+  }
+}
