@@ -50,7 +50,6 @@ var intervalId = window.setInterval(checkTimeStamps, 1000);
 
 function checkTimeStamps() {
   const currentTime = videoPlayer.getCurrentTime();
-  if(currentTime > 10) {
-    videoPlayer.seekTo(0, true);
-  }
+  // Check comment time stamp
+  // Check transcript time stamp
 }
