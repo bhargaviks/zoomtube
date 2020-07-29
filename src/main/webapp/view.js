@@ -13,9 +13,12 @@
 // limitations under the License.
 
 const PARAM_ID = 'id';
+<<<<<<< HEAD
 const PARAM_VIDEO_ID = 'video-id';
 
 /* exported LECTURE_ID */
+=======
+>>>>>>> master
 window.LECTURE_ID = getLectureId();
 window.VIDEO_ID = getVideoId();
 
