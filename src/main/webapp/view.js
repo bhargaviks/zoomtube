@@ -13,20 +13,21 @@
 // limitations under the License.
 
 const PARAM_ID = 'id';
-<<<<<<< HEAD
 const PARAM_VIDEO_ID = 'video-id';
 
-/* exported LECTURE_ID */
-=======
->>>>>>> master
 window.LECTURE_ID = getLectureId();
 window.VIDEO_ID = getVideoId();
 
 initialize();
 
-/** Initializes the video player for the lecture view page. */
+/**
+ * Initializes the video player and discussion section
+ * for the lecture view page.
+ */
 async function initialize() {
   window.loadVideoApi();
+  window.intializeDiscussion();
+  // TODO: Initialize the trancript section.
 }
 
 /**
@@ -36,7 +37,7 @@ function getLectureId() {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(PARAM_ID);
 }
-s
+
 /**
  * Returns the video id obtained from the current page's URL parameters.
  */
