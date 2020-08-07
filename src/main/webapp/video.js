@@ -35,6 +35,7 @@ function onYouTubeIframeAPIReady() {
     height: '390',
     width: '640',
     videoId: window.VIDEO_ID,
+    playerVars: {rel: 0},
     events: {
       onReady: onPlayerReady,
     },
